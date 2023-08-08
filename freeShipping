@@ -1,0 +1,34 @@
+# Kelley Campbell
+# Generic shopping calculator 
+# shopping bag = purchases + container for totalPurchase
+# loops and light nesting practice.
+
+freeShipping = False
+purchases = []
+
+
+# def Run_it_up():
+totalPurchase = float(input("Enter your Total purchase: $"))
+purchases += totalPurchase
+if totalPurchase < 50:
+    print("Add $10 for shipping, new total:  $", totalPurchase + 10)
+    more = input("Add more to your purchase?(Y or N): ").upper()
+    if more.upper() == "Y":     
+        print(totalPurchase)
+    # elif more.upper() != "Y" or more.upper() != "N":
+    #     print("Try again..(Y or N)")
+    #     print(more)
+    # elif 
+        # return Run_it_up
+    else:
+        print("Paper or Plastic...")
+else:
+    freeShipping = True
+    print("Your shipping is free!")
+    more = input("Add more to your purchase?(Y or N): ").upper()
+    print(more) 
+    if more.upper() == "Y":     
+        print(totalPurchase) #START PROG AGAIN
+    else:
+        print("Paper or Plastic...")
+# print(Run_it_up)
